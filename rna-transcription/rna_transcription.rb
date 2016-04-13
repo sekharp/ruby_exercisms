@@ -10,8 +10,10 @@ class Complement
         nuc = 'C'
       elsif nuc == 'T'
         nuc = 'A'
-      else
+      elsif nuc == 'A'
         nuc = 'U'
+      else
+        raise ArgumentError.new("Only valid nucleotides allowed.")
       end
     end
     rna.join
