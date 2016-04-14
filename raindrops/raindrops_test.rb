@@ -44,7 +44,6 @@ class RaindropsTest < Minitest::Test
   end
 
   def test_21
-    skip
     assert_equal 'PlingPlong', Raindrops.convert(21)
   end
 
