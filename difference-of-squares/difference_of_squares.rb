@@ -6,6 +6,6 @@ class Squares
   end
 
   def square_of_sum
-    225
+    (1..@number).to_a.reduce(:+)**2
   end
 end
