@@ -16,4 +16,12 @@ class Squares
     end
     numbers_array.reduce(:+)
   end
+
+  def difference
+    if @number == 0
+      0
+    else
+      square_of_sum - sum_of_squares
+    end
+  end
 end
