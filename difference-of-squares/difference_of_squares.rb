@@ -8,4 +8,12 @@ class Squares
   def square_of_sum
     (1..@number).to_a.reduce(:+)**2
   end
+
+  def sum_of_squares
+    numbers_array = (1..@number).to_a
+    numbers_array.map! do |number|
+      number**2
+    end
+    numbers_array.reduce(:+)
+  end
 end
